@@ -1,0 +1,13 @@
+/bin
+/Library
+/Temp
+/Logs
+/output
+/.idea
+/UserSettings
+/obj
+
+.vs/*
+
+*.csproj
+*.sln
