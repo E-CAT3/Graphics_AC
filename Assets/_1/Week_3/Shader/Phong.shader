@@ -49,6 +49,10 @@ Shader "Unlit/Phong"
                 float3 lightDir = normalize(_WorldSpaceLightPos0.xyz); // ディレクショナルライトの逆向き
                 fixed3 lightCol = _LightColor0.xyz; // ディレクショナルライトの色
                 float3 refVec = reflect(-lightDir, i.normal); // 反射角
+
+                // float3 aN = dot(_WorldSpaceLightPos0.xyz,i.normal);
+                // float3 refVec = -_WorldSpaceLightPos0.xyz + 2*aN*i.normal; // 反射角reflect未使用
+
                 float3 toEye = normalize(_WorldSpaceCameraPos - i.worldPos); // 表面から視線へのベクトル
                 float t = pow(max(0,dot(refVec, toEye)),_ReflectionLevel); 
                 fixed4 col = _Color;
