@@ -10,13 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de640fe3d0db1804a85f9fc8f5cadab6, type: 3}
-  m_Name: ForwardRenderer
+  m_Name: 02_Renderer_GrayScale
   m_EditorClassIdentifier: 
-  m_RendererFeatures:
-  - {fileID: 6894952920975090955}
-  - {fileID: 281046019338739377}
-  - {fileID: 6285195309711247020}
-  m_RendererFeatureMap: 0b25c38d26cbaf5fb11e3994dd79e603ac464a73d57f3957
+  m_RendererFeatures: []
+  m_RendererFeatureMap: 
   postProcessData: {fileID: 11400000, guid: 41439944d30ece34e96484bdb6645b55, type: 2}
   xrSystemData: {fileID: 11400000, guid: 60e1133243b97e347b653163a8c01b64, type: 2}
   shaders:
@@ -39,54 +36,9 @@ MonoBehaviour:
     overrideStencilState: 0
     stencilReference: 0
     stencilCompareFunction: 8
-    passOperation: 0
+    passOperation: 2
     failOperation: 0
     zFailOperation: 0
   m_ShadowTransparentReceive: 1
   m_RenderingMode: 0
   m_AccurateGbufferNormals: 0
---- !u!114 &281046019338739377
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce044393d04fd2c4ca6eec43110b709f, type: 3}
-  m_Name: NewBasicBlurRenderFeature
-  m_EditorClassIdentifier: 
-  m_Active: 0
-  blurlevel: -12
-  _renderPassEvent: 500
---- !u!114 &6285195309711247020
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e43684e1bd9b764788b82f1d003aaad, type: 3}
-  m_Name: NewGaussianBlurRenderFeature
-  m_EditorClassIdentifier: 
-  m_Active: 0
-  blurlevel: -8
-  _renderPassEvent: 500
---- !u!114 &6894952920975090955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef606fb952c2cb44c939aff81cfba4d1, type: 3}
-  m_Name: NewGrayscale
-  m_EditorClassIdentifier: 
-  m_Active: 0
-  settings:
-    renderPassEvent: 500
